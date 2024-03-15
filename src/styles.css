@@ -1,0 +1,11 @@
+/* src/styles.css */
+
+/* Remove @tailwind directives */ 
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Include Tailwind CSS utilities directly */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
