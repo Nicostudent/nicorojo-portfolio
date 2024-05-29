@@ -5,10 +5,31 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #2e2e2e;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+@keyframes bounce {
+  0%, 20%, 50%, 80% {
+    transform: translateY(0);
+    opacity: 0.1;
+  }
+
+  40%, 60% {
+    transform: translateY(-10px);
+    opacity: 0.4;
+  } 
+  
+  100%{
+    transform: translateX(100px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s forwards; 
+}
+
