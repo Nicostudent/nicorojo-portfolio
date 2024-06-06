@@ -50,21 +50,21 @@ export const EmailForm = () => {
   return (
     <form onSubmit={handleSubmit} className="gap-2 flex flex-col items-center">
       <input
-        className="bg-white border rounded pl-2"
+        className="bg-white border rounded pl-2 w-2/3"
         type="text"
         placeholder="Your Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
-        className="bg-white border rounded pl-2"
+        className="bg-white border rounded pl-2 w-2/3"
         type="email"
         placeholder="Your Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <textarea
-        className="bg-white border rounded"
+        className="bg-white border rounded pl-2 w-2/3 md:w-full"
         cols={30}
         rows={10}
         placeholder="Your Message"
@@ -72,7 +72,7 @@ export const EmailForm = () => {
         onChange={(e) => setMessage(e.target.value)}
       />
       <button
-        className="bg-gray-100 p-2 self-center px-2 rounded hover:bg-gray-200"
+        className="bg-gray-100 p-2 self-center px-2 w-2/3  rounded hover:bg-gray-200"
         type="submit"
       >
         {loading ? (
